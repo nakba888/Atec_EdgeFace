@@ -76,8 +76,8 @@ class YuNetNPUDetector:
         # Detection thresholds
         # Lower threshold for NPU due to quantization effects
         # NPU quantization reduces confidence scores, especially for distant/small faces
-        self.score_threshold = 0.4  # Tuned: 0.4 provides good balance (distant detection vs false positives)
-        self.nms_threshold = 0.3    # Keeps duplicate removal effective
+        self.score_threshold = 0.5  # Tuned: 0.4 provides good balance (distant detection vs false positives)
+        self.nms_threshold = 0.2    # Keeps duplicate removal effective
 
         # Initialize DeepX NPU Inference Engine
         try:
